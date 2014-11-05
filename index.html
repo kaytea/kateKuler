@@ -11,21 +11,14 @@
         <!--<link type="text/css" rel="stylesheet" href="http://ryrych.github.io/rcarousel/examples/css/reset.css" />
         <link type="text/css" rel="stylesheet" href="http://ryrych.github.io/rcarousel/examples/css/style.css" />		
         <link type="text/css" rel="stylesheet" href="http://ryrych.github.io/rcarousel/widget/css/rcarousel.css" />-->
-        <!--<script>
-        $(document).ready(function(){
-	        $("select#numOfBlocks").change( function () {//# boxes displayed
-				var magicNum = parseInt($("select#numOfBlocks option:selected").text());
-				for(var i = 1; i <= 6; i++){
-					var theID = "#cb" + i;
-					if (magicNum < i){
-						$(theID).hide();
-					} else{
-						$(theID).show();
-					}
-				}
-			});
+        <script>
+        	$(document).ready(function(){
+	        	$.getJSON('colors.json', function(data) {
+    				console.log("success");
+    				consol.log(data);
+  			});
 		});
-        </script>-->
+        </script>
     </head>
     <body>
     	<div id="title_box">
