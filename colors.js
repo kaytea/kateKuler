@@ -80,7 +80,11 @@ function getHue(color) {
 $(document).ready(function() {
 
   $.getJSON('colors.json', function(data) {
-    buildLists(data.colors);
+    colorList = data;
+    buildLists(colorList.colors);
+    while(colorList.colors.name[i]){
+      console.log(colorList.colors.name[i]);
+    }
   });
 
   $('.colorBlockMini:input').submit( function () {//color of selected box
