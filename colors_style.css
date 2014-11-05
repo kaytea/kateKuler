@@ -1,0 +1,129 @@
+body{ margin: 0; padding: 0; font-family: sans-serif;}
+form{ display: inline-block ;}
+/*Title*/
+#title_box{
+	position: absolute;
+	width: 100%;
+	min-width: 1000px;
+	text-align: center;
+	padding: 2vw;
+	margin: 1vw 0 1vw 0;
+	background-color: #636363;
+	color: white;
+
+}
+#title_box h1{ margin-top: 0; }
+#title_box h3{ font-weight: 200; margin-top: -1vw;}
+
+
+#rowWrap{
+	position: absolute;
+	width: 1000px;
+	margin: 150px 0 0 0;
+	padding: 0;
+	background-color: lightcyan;
+}
+/*Display*/
+#display_box{
+	display: inline-block;
+	height: 32vw;
+	width: 45vw;
+	background-color: black;
+	padding: 1.5vw 1vw;
+	margin: 0 1vw;
+	//margin-top: -10em;
+	position: relative;
+	top: -45px;
+	left: 0;
+}
+#settings{ color: white; margin: 0;}
+//#settings form{ display: inline-block; margin: 0;}
+#colorBlockContainer{
+	text-align: center;
+}
+
+.colorBlock{
+	width: 12vw;
+	height: 12vw;
+	padding: 1vw;
+	margin: .2vw;
+	margin-top: .5vw;
+	background-color: blue;
+	display: inline-block;
+	text-align: left;
+}
+
+/*carousel*/
+#carousel_box{
+	display: inline-block;
+	margin: 0 1vw 0 .2vw;
+	background-color: pink;
+	max-width: 45vw;
+	height: 32vw;
+}
+
+.colorBlockMini{
+	width: 12vw;
+	height: 4vw;
+	background-color: salmon;
+	display: inline-block;
+	text-align: center;
+	padding: .2vw;
+	//margin: .1vw;
+}
+
+.col1of3{
+	display: inline-block;
+	width: 30%;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/*
+//------------------
+#container, #container1 {
+	width: 100px;
+	height: 400px;
+	//position: relative;
+	display: inline-block;
+}
+			
+#carousel, #carousel1 {
+	//position: absolute;
+	top: 50px;
+	display: inline-block;
+}
+
+#carousel img, #carousel1 img {
+	border: 0;
+}
+
+.slide {
+	margin: 0;
+	position: relative;
+}
+
+#ui-carousel-next, #ui-carousel-prev {
+	width: 100px;
+	height: 50px;
+	background: url(images/arrow-bottom.png) #636363 center center no-repeat;
+	display: block;
+	//position: absolute;
+	left: 0
+	z-index: 100;
+}
+
+#ui-carousel-next {
+	top: 0;
+	background-image: url(images/arrow-top.png);
+}
+
+#ui-carousel-prev {
+	bottom: 0;
+}
+			
+#ui-carousel-next > span, #ui-carousel-prev > span {
+	display: none;
+}*/

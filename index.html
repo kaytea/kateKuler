@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title> Web Colors </title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!--<script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>-->
+        <link rel="stylesheet" href="colors_style.css" />
+        <script src="colors.js" language="javascript" type="text/javascript"></script>
+        <!--<script language="javascript" type="text/javascript" src="interactColors.js"></script>-->
+
+        <!--<link type="text/css" rel="stylesheet" href="http://ryrych.github.io/rcarousel/examples/css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="http://ryrych.github.io/rcarousel/examples/css/style.css" />		
+        <link type="text/css" rel="stylesheet" href="http://ryrych.github.io/rcarousel/widget/css/rcarousel.css" />-->
+        <!--<script>
+        $(document).ready(function(){
+	        $("select#numOfBlocks").change( function () {//# boxes displayed
+				var magicNum = parseInt($("select#numOfBlocks option:selected").text());
+				for(var i = 1; i <= 6; i++){
+					var theID = "#cb" + i;
+					if (magicNum < i){
+						$(theID).hide();
+					} else{
+						$(theID).show();
+					}
+				}
+			});
+		});
+        </script>-->
+    </head>
+    <body>
+    	<div id="title_box">
+    		<h1>Kate Kuler</h1>
+    		<h3>Create a color scheme using the SVG color values with shortcuts usable in netscape</h3>
+    	</div>
+    <div id="rowWrap">
+    	<div id="display_box">
+    		<div id="settings">
+    			&nbsp;&nbsp;&nbsp;Number of Blocks&nbsp;
+    			<select name="numOfBlocks" value="numOfBlocks" id="numOfBlocks">
+    				<option></option>
+           			<option>1</option>
+           			<option>2</option>
+           			<option>3</option>
+           			<option>4</option>
+              		<option>5</option>
+              		<option>6</option>
+         		</select>
+    			<!--text color form
+    			//# color blocks-->
+    		</div>
+    		<div id="colorBlockContainer">
+    			<div class="colorBlock" id="cb1">1.</div>
+    			<div class="colorBlock" id="cb2">2.</div>
+    			<div class="colorBlock" id="cb3">3.</div>
+    			<div class="colorBlock" id="cb4">4.</div>
+    			<div class="colorBlock" id="cb5">5.</div>
+    			<div class="colorBlock" id="cb6">6.</div>
+    		</div>
+    	</div>
+    	<div id="carousel_box">
+    		<div class="col1of3" id="colorCol1">
+    			<span style="font-size: .7em">Color</span>&nbsp;
+    			<select name="colCol1" value="colCol1" id="colCol1">
+    				<option>Red</option>
+    				<option>Pink</option>
+              		<option>Orange</option>
+              		<option>Yellow</option>
+              		<option>Green</option>
+              		<option>Cyan</option>
+             		<option>Blue</option>
+          	 		<option>Purple</option>
+         		</select>
+	    		<div class="colorBlockMini">w</div>
+	    		<div class="colorBlockMini">o</div>
+	    		<div class="colorBlockMini">o</div>
+	    		<div class="colorBlockMini">f</div>
+	    		<div class="colorBlockMini">o</div>
+	    		<div class="colorBlockMini">f</div>
+    		</div>
+    		<div class="col1of3">
+	    		<div class="colorBlockMini">m</div>
+	    		<div class="colorBlockMini">e</div>
+	    		<div class="colorBlockMini">o</div>
+	    		<div class="colorBlockMini">w</div>
+	    		<div class="colorBlockMini">o</div>
+	    		<div class="colorBlockMini">f</div>
+    		</div>
+    		<div class="col1of3">
+	    		<div class="colorBlockMini">m</div>
+	    		<div class="colorBlockMini">e</div>
+	    		<div class="colorBlockMini">o</div>
+	    		<div class="colorBlockMini">w</div>
+	    		<div class="colorBlockMini">o</div>
+	    		<div class="colorBlockMini">f</div>
+    		</div>
+    	</div>
+    </div>
+    			<!--<form name="cbmSelected" action="" onchange='this.form.submit()'>
+		    		<input type="radio" id="cbmr1" name="cb"> 1
+		    		<input type="radio" id="cbmr2" name="cb"> 2
+		    		<input type="radio" id="cbmr3" name="cb"> 3<br/>
+		    		<input type="radio" id="cbmr4" name="cb"> 4
+		    		<input type="radio" id="cbmr5" name="cb"> 5
+		    		<input type="radio" id="cbmr6" name="cb"> 6
+	    		</form>
+    		</div>-->
+    		<!--<div id="content">
+			<div id="container">
+				<div id="carousel">
+					<img src="http://placekitten.com/g/100/50" />
+					<img src="http://placekitten.com/g/50/50" />
+					<img src="http://placekitten.com/g/100/50" />
+					<img src="http://placekitten.com/g/50/50" />
+					<img src="http://placekitten.com/g/100/50" />
+					<img src="http://placekitten.com/g/50/50" />
+					<img src="http://placekitten.com/g/100/50" />
+					<img src="http://placekitten.com/g/50/50" />
+					<img src="http://placekitten.com/g/100/50" />
+					<img src="http://placekitten.com/g/50/50" />
+					<img src="http://placekitten.com/g/100/50" />
+					<img src="http://placekitten.com/g/50/50" />
+				</div>
+				<a href="#" id="ui-carousel-next"><span>next</span></a>
+				<a href="#" id="ui-carousel-prev"><span>prev</span></a>
+			</div>
+			<div id="container1">
+				<div id="carousel1">
+					<div class="slide">content</div>
+					<div class="slide"><div class="colorBlockMini"></div></div>
+				</div>
+				<a href="#" id="ui-carousel-next"><span>next</span></a>
+				<a href="#" id="ui-carousel-prev"><span>prev</span></a>
+			</div>
+			</div>
+    	</div>
+    	<script type="text/javascript" src="http://ryrych.github.io/rcarousel/widget/lib/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="http://ryrych.github.io/rcarousel/widget/lib/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="http://ryrych.github.io/rcarousel/widget/lib/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="http://ryrych.github.io/rcarousel/widget/lib/jquery.ui.rcarousel.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				$("#carousel").rcarousel({
+					orientation: "vertical",
+					step: 1,
+					height: 50,
+					visible: 6,
+				});
+				$("#carousel1").rcarousel({
+					orientation: "vertical",
+					step: 1,
+					//height: 50,
+					visible: 6,
+				});
+				$("#ui-carousel-next").add( "#ui-carousel-prev" ).hover(
+					function() {
+						$( this ).css( "opacity", 0.7 );
+					},
+					function() {
+						$( this ).css( "opacity", 1.0 );
+					}
+				);					
+			});
+		</script>-->
+    </body>
+</html>
